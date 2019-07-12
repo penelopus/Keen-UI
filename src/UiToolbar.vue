@@ -1,7 +1,7 @@
 <template>
     <div class="ui-toolbar" :class="classes">
         <div class="ui-toolbar__left">
-            <div class="ui-toolbar__nav-icon" v-if="!removeNavIcon">
+            <div class="ui-toolbar__nav-icon testjd" v-if="!removeNavIcon">
                 <slot name="icon">
                     <ui-icon-button
                         size="large"

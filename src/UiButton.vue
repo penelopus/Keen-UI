@@ -1,6 +1,6 @@
 <template>
     <component
-        class="ui-button"
+        class="ui-button testjd"
 
         :class="classes"
         :disabled="disabled || loading"
@@ -10,7 +10,8 @@
 
         @click="onClick"
     >
-        <div class="ui-button__content">
+        <div class="ui-button__content testjd">
+            <span style="padding-right: 3px;">🦄</span>
             <div class="ui-button__icon" v-if="icon || $slots.icon">
                 <slot name="icon">
                     <ui-icon :icon="icon"></ui-icon>
@@ -171,6 +172,7 @@ export default {
 
     methods: {
         onClick(e) {
+            console.log('🦄 clicky', e);
             this.$emit('click', e);
         },
 
